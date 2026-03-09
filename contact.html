@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Sai Boutique Hunasagi</title>
+  <meta name="description" content="Contact Sai Boutique Hunasagi, Karnataka. Call 9902958742 or WhatsApp. Open 9:30 AM – 9:00 PM every day." />
+  <link rel="stylesheet" href="assets/css/design-system.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <style>
+    /* Big call button wrapper */
+    .call-hero {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      padding: 2.5rem var(--gutter);
+      margin-bottom: 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .call-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 50% 100%, rgba(201,168,76,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .call-hero__label {
+      font-family: var(--font-label);
+      font-size: 0.62rem;
+      letter-spacing: 0.28em;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+    }
+    .call-hero__note {
+      font-family: var(--font-label);
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      margin-top: 1rem;
+    }
+
+    /* Hours card */
+    .hours-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+    }
+    .hours-card__time {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      color: var(--gold);
+      line-height: 1.2;
+    }
+    .hours-card__label {
+      font-family: var(--font-label);
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-name">Sai Boutique</span>
+        <span class="navbar__logo-sub">Master Tailoring · Hunasagi</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="is-active">Contact</a>
+      </nav>
+      <a href="tel:9902958742" class="navbar__phone">📞 9902958742</a>
+      <button class="navbar__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <a href="services.html" class="mobile-nav__link">Services</a>
+    <a href="gallery.html" class="mobile-nav__link">Gallery</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="contact.html" class="mobile-nav__link is-active">Contact</a>
+    <div class="mobile-nav__footer">
+      <div class="t-label" style="font-size:0.55rem;margin-bottom:0.6rem;">Call Us Now</div>
+      <a href="tel:9902958742" class="mobile-nav__footer-phone">9902958742</a>
+      <div class="mobile-nav__footer-hours">9:30 AM – 9:00 PM · Every Day</div>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="t-label reveal">Get In Touch</p>
+    <span class="gold-rule reveal"></span>
+    <h1 class="reveal"><em>Contact</em> Us</h1>
+    <p class="reveal" style="max-width:440px;margin:1rem auto 0;">Call, WhatsApp, or drop us a message. We're open every day from 9:30 AM to 9:00 PM.</p>
+  </div>
+
+  <!-- MAIN CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+
+      <!-- BIG CALL CTA -->
+      <div class="call-hero reveal">
+        <p class="call-hero__label">Fastest Way to Reach Us</p>
+        <a href="tel:9902958742" class="btn--call">
+          📞 &nbsp; Call 9902958742
+        </a>
+        <p class="call-hero__note">Tap above to call directly · Open 9:30 AM – 9:00 PM Every Day</p>
+      </div>
+
+      <!-- CONTACT GRID -->
+      <div class="contact-grid">
+
+        <!-- LEFT: Contact Info -->
+        <div class="contact-info reveal">
+          <div>
+            <p class="t-label" style="margin-bottom:0.8rem;">Contact Details</p>
+            <span class="gold-rule gold-rule--left"></span>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">📞</div>
+            <div>
+              <p class="contact-info-item__label">Phone</p>
+              <a href="tel:9902958742" class="contact-info-item__value" style="color:var(--gold);">9902958742</a>
+              <p class="contact-info-item__sub">Tap to call directly from your phone</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">⏰</div>
+            <div>
+              <p class="contact-info-item__label">Working Hours</p>
+              <p class="contact-info-item__value">9:30 AM – 9:00 PM</p>
+              <p class="contact-info-item__sub">Open every day · All 7 days of the week</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">💬</div>
+            <div>
+              <p class="contact-info-item__label">WhatsApp</p>
+              <p class="contact-info-item__value">Message Us</p>
+              <p class="contact-info-item__sub" style="margin-bottom:1rem;">Share design references or ask about availability</p>
+              <a href="https://wa.me/919902958742" class="btn--whatsapp" target="_blank" rel="noopener">
+                💬 &nbsp; Open WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">🗣</div>
+            <div>
+              <p class="contact-info-item__label">Languages Spoken</p>
+              <p class="contact-info-item__value" style="font-size:1rem;">ಕನ್ನಡ &nbsp;·&nbsp; తెలుగు &nbsp;·&nbsp; हिंदी</p>
+              <div class="lang-badges" style="margin-top:0.8rem;">
+                <span class="lang-badge">Kannada</span>
+                <span class="lang-badge">Telugu</span>
+                <span class="lang-badge">Hindi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="reveal reveal-delay-2">
+          <p class="t-label" style="margin-bottom:0.8rem;">Send a Message</p>
+          <span class="gold-rule gold-rule--left"></span>
+          <p style="margin:1rem 0 1.8rem;font-size:0.9rem;">Leave your details and we'll contact you as soon as possible.</p>
+
+          <div class="contact-form" id="js-form">
+            <div class="form-group">
+              <label class="form-label" for="f-name">Your Name</label>
+              <input class="form-control" type="text" id="f-name" placeholder="e.g. Priya Sharma" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-phone">Phone Number</label>
+              <input class="form-control" type="tel" id="f-phone" placeholder="Your mobile number" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-service">What Do You Need?</label>
+              <select class="form-control" id="f-service">
+                <option value="">Select a service...</option>
+                <option>Blouse / Choli</option>
+                <option>Lehenga / Skirt</option>
+                <option>Salwar Kameez</option>
+                <option>Suit / Kurta</option>
+                <option>Kids Wear</option>
+                <option>Alterations & Repairs</option>
+                <option>Special Occasion Wear</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-msg">Message <span style="color:var(--text-muted);">(Optional)</span></label>
+              <textarea class="form-control" id="f-msg" placeholder="Describe your design, fabric, or any questions..."></textarea>
+            </div>
+            <button class="btn btn--primary" id="js-submit" style="width:100%;justify-content:center;padding:1rem;">
+              <span>Send Message</span>
+            </button>
+          </div>
+
+          <!-- Success state -->
+          <div class="form-success" id="js-success">
+            <div class="form-success__icon">✓</div>
+            <div class="form-success__title">Message Received!</div>
+            <p>Thank you. We'll call you back soon. Or reach us directly at <a href="tel:9902958742" style="color:var(--gold);">9902958742</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOURS HIGHLIGHT -->
+      <div style="margin-top:5rem;" class="reveal">
+        <div class="section-head">
+          <p class="t-label">When to Visit</p>
+          <span class="gold-rule"></span>
+          <h2>We're <em>Open Daily</em></h2>
+        </div>
+        <div class="hours-card" style="max-width:400px;margin:0 auto;">
+          <p class="t-label" style="margin-bottom:1rem;">Working Hours</p>
+          <div class="hours-card__time">9:30 AM – 9:00 PM</div>
+          <p class="hours-card__label">Monday to Sunday · All 7 Days</p>
+          <div style="margin-top:1.5rem; padding-top:1.5rem; border-top:1px solid var(--border);">
+            <a href="tel:9902958742" class="btn btn--primary" style="width:100%;justify-content:center;">
+              <span>📞 &nbsp;9902958742</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GOOGLE MAP -->
+      <div style="margin-top:5rem;" class="reveal">
+        <div class="section-head">
+          <p class="t-label">Find Us</p>
+          <span class="gold-rule"></span>
+          <h2>Our <em>Location</em></h2>
+          <p>Hunasagi, Karnataka, India</p>
+        </div>
+        <div class="map-frame">
+          <!-- Replace with your exact shop's Google Maps embed URL -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.7956450476377!2d76.5166586749887!3d16.458669784278666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc80bb94e01a373%3A0x24754bed195adc65!2ssai%20boutique!5e1!3m2!1sen!2sin!4v1773039037283!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Sai Boutique Location, Hunasagi, Karnataka">
+          </iframe>
+        </div>
+        <p style="font-size:0.75rem;color:var(--text-muted);margin-top:0.8rem;text-align:center;">
+          📍 &nbsp;Update the map above with your shop's exact address for best customer experience
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">Sai Boutique</div>
+      <span class="gold-rule"></span>
+      <nav class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__contact">
+        <span>⏰ &nbsp;9:30 AM – 9:00 PM &nbsp;·&nbsp; Every Day</span>
+        <span>🗣 &nbsp;Kannada &nbsp;·&nbsp; Telugu &nbsp;·&nbsp; Hindi</span>
+        <a href="tel:9902958742">📞 &nbsp;9902958742</a>
+      </div>
+      <p class="footer__copy">© 2024 Sai Boutique, Hunasagi, Karnataka. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919902958742" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Sai Boutique Hunasagi</title>
+  <meta name="description" content="View our tailoring portfolio — blouses, lehengas, suits and more from Sai Boutique Hunasagi. Call 9902958742." />
+  <link rel="stylesheet" href="assets/css/design-system.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <style>
+    /* Gallery gradient backgrounds for placeholder items */
+    .ph--blouse  { background: linear-gradient(145deg, #211810 0%, #160f0a 100%); }
+    .ph--lehenga { background: linear-gradient(145deg, #1a1020 0%, #100a18 100%); }
+    .ph--suit    { background: linear-gradient(145deg, #0f1a12 0%, #0a100c 100%); }
+    .ph--kids    { background: linear-gradient(145deg, #1a1a10 0%, #121208 100%); }
+    .ph--mauve   { background: linear-gradient(145deg, #1a1018 0%, #100a10 100%); }
+
+    .ph-body {
+      aspect-ratio: 3/4;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 0.6rem; padding: 2rem 1rem;
+      position: relative; overflow: hidden;
+    }
+    .ph-body::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(201,168,76,0.04) 0, rgba(201,168,76,0.04) 1px,
+        transparent 0, transparent 18px
+      );
+    }
+    .ph-icon { font-size: 2.8rem; opacity: 0.18; position: relative; z-index: 1; }
+    .ph-text {
+      font-family: var(--font-label);
+      font-size: 0.56rem;
+      letter-spacing: 0.22em;
+      color: var(--text-muted);
+      text-align: center;
+      position: relative; z-index: 1;
+    }
+
+    /* Note banner */
+    .gallery-note {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      padding: 1.3rem 1.5rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+    .gallery-note__icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 1px; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-name">Sai Boutique</span>
+        <span class="navbar__logo-sub">Master Tailoring · Hunasagi</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="is-active">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="tel:9902958742" class="navbar__phone">📞 9902958742</a>
+      <button class="navbar__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <a href="services.html" class="mobile-nav__link">Services</a>
+    <a href="gallery.html" class="mobile-nav__link is-active">Gallery</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="contact.html" class="mobile-nav__link">Contact</a>
+    <div class="mobile-nav__footer">
+      <div class="t-label" style="font-size:0.55rem;margin-bottom:0.6rem;">Call Us Now</div>
+      <a href="tel:9902958742" class="mobile-nav__footer-phone">9902958742</a>
+      <div class="mobile-nav__footer-hours">9:30 AM – 9:00 PM · Every Day</div>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="t-label reveal">Our Portfolio</p>
+    <span class="gold-rule reveal"></span>
+    <h1 class="reveal"><em>Gallery</em></h1>
+    <p class="reveal" style="max-width:450px;margin:1rem auto 0;">A curated glimpse of our craftsmanship. Each piece a reflection of care and precision.</p>
+  </div>
+
+  <!-- GALLERY SECTION -->
+  <section class="section">
+    <div class="container">
+
+      <div class="gallery-note reveal">
+        <span class="gallery-note__icon">📸</span>
+        <span>Our gallery shows sample work styles. Visit us in person to see finished pieces and fabric swatches — or call <a href="tel:9902958742" style="color:var(--gold);">9902958742</a> for details.</span>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div class="gallery-filters reveal">
+        <button class="gallery-filter is-active" data-filter="all">All Work</button>
+        <button class="gallery-filter" data-filter="blouse">Blouses</button>
+        <button class="gallery-filter" data-filter="lehenga">Lehengas</button>
+        <button class="gallery-filter" data-filter="suit">Suits & Kurtas</button>
+        <button class="gallery-filter" data-filter="kids">Kids Wear</button>
+      </div>
+
+      <!-- MASONRY GALLERY -->
+      <div class="gallery-grid reveal">
+
+        <div class="gallery-item ph--lehenga" data-category="lehenga">
+          <div class="ph-body" style="aspect-ratio:3/4;">
+            <span class="ph-icon">👗</span>
+            <span class="ph-text">Bridal Lehenga</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Bridal Lehenga</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--blouse" data-category="blouse">
+          <div class="ph-body" style="aspect-ratio:1/1;">
+            <span class="ph-icon">👘</span>
+            <span class="ph-text">Silk Blouse</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Silk Blouse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--suit" data-category="suit">
+          <div class="ph-body" style="aspect-ratio:4/3;">
+            <span class="ph-icon">👔</span>
+            <span class="ph-text">Men's Kurta Set</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Men's Kurta</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--kids" data-category="kids">
+          <div class="ph-body" style="aspect-ratio:3/4;">
+            <span class="ph-icon">🧒</span>
+            <span class="ph-text">Kids Ethnic Set</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Kids Ethnic</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--blouse" data-category="blouse">
+          <div class="ph-body" style="aspect-ratio:1/1;">
+            <span class="ph-icon">🪡</span>
+            <span class="ph-text">Mirror Work Blouse</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Mirror Work</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--mauve" data-category="lehenga">
+          <div class="ph-body" style="aspect-ratio:3/4;">
+            <span class="ph-icon">🥻</span>
+            <span class="ph-text">Festive Lehenga</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Festive Lehenga</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--suit" data-category="suit">
+          <div class="ph-body" style="aspect-ratio:1/1;">
+            <span class="ph-icon">✂️</span>
+            <span class="ph-text">Salwar Kameez</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Salwar Kameez</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--blouse" data-category="blouse">
+          <div class="ph-body" style="aspect-ratio:4/3;">
+            <span class="ph-icon">✨</span>
+            <span class="ph-text">Designer Blouse</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Designer Cut</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--kids" data-category="kids">
+          <div class="ph-body" style="aspect-ratio:3/4;">
+            <span class="ph-icon">⭐</span>
+            <span class="ph-text">Kids Frock</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Kids Frock</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--lehenga" data-category="lehenga">
+          <div class="ph-body" style="aspect-ratio:1/1;">
+            <span class="ph-icon">💎</span>
+            <span class="ph-text">Occasion Skirt</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Occasion Wear</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--mauve" data-category="blouse">
+          <div class="ph-body" style="aspect-ratio:3/4;">
+            <span class="ph-icon">🌸</span>
+            <span class="ph-text">Cotton Blouse</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Cotton Blouse</span>
+          </div>
+        </div>
+
+        <div class="gallery-item ph--suit" data-category="suit">
+          <div class="ph-body" style="aspect-ratio:4/3;">
+            <span class="ph-icon">🧵</span>
+            <span class="ph-text">Straight Kurti</span>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__label">Straight Kurti</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM CTA -->
+      <div style="text-align:center;margin-top:5rem;" class="reveal">
+        <p class="t-label" style="margin-bottom:0.8rem;">Bring Your Fabric</p>
+        <span class="gold-rule"></span>
+        <h2 style="margin:1rem 0 0.6rem;">Let's Create <em>Something Beautiful</em></h2>
+        <p style="max-width:420px;margin:0 auto 2rem;">Walk in with your fabric and design reference. We'll do the rest.</p>
+        <a href="tel:9902958742" class="btn btn--primary btn--lg"><span>📞 &nbsp;Book a Fitting</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">Sai Boutique</div>
+      <span class="gold-rule"></span>
+      <nav class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__contact">
+        <span>⏰ &nbsp;9:30 AM – 9:00 PM &nbsp;·&nbsp; Every Day</span>
+        <a href="tel:9902958742">📞 &nbsp;9902958742</a>
+      </div>
+      <p class="footer__copy">© 2024 Sai Boutique, Hunasagi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919902958742" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

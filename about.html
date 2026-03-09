@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Sai Boutique Hunasagi</title>
+  <meta name="description" content="The story behind Sai Boutique — a trusted tailoring shop in Hunasagi serving local families with skill, trust and care. Call 9902958742." />
+  <link rel="stylesheet" href="assets/css/design-system.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <style>
+    .about-image-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      aspect-ratio: 4/3;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 5rem;
+      position: relative; overflow: hidden;
+    }
+    .about-image-box::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(201,168,76,0.03) 0, rgba(201,168,76,0.03) 1px,
+        transparent 0, transparent 20px
+      );
+    }
+    .about-image-box span { position: relative; z-index: 1; opacity: 0.4; }
+    .about-image-accent {
+      position: absolute;
+      bottom: -0.8rem; right: -0.8rem;
+      width: 55%; height: 55%;
+      border: 1px solid var(--gold-subtle);
+      pointer-events: none;
+    }
+    .story-text p { margin-bottom: 1.3rem; line-height: 1.9; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-name">Sai Boutique</span>
+        <span class="navbar__logo-sub">Master Tailoring · Hunasagi</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html" class="is-active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="tel:9902958742" class="navbar__phone">📞 9902958742</a>
+      <button class="navbar__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <a href="services.html" class="mobile-nav__link">Services</a>
+    <a href="gallery.html" class="mobile-nav__link">Gallery</a>
+    <a href="about.html" class="mobile-nav__link is-active">About</a>
+    <a href="contact.html" class="mobile-nav__link">Contact</a>
+    <div class="mobile-nav__footer">
+      <div class="t-label" style="font-size:0.55rem;margin-bottom:0.6rem;">Call Us Now</div>
+      <a href="tel:9902958742" class="mobile-nav__footer-phone">9902958742</a>
+      <div class="mobile-nav__footer-hours">9:30 AM – 9:00 PM · Every Day</div>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="t-label reveal">Our Story</p>
+    <span class="gold-rule reveal"></span>
+    <h1 class="reveal">About <em>Sai Boutique</em></h1>
+    <p class="reveal" style="max-width:480px;margin:1rem auto 0;">Built on trust, skill, and a deep love for beautiful garments — this is who we are.</p>
+  </div>
+
+  <!-- STORY SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="split-layout" style="margin-bottom:5rem;">
+        <div class="split-layout__visual reveal">
+          <div class="about-image-box"><span>🧵</span></div>
+          <div class="about-image-accent"></div>
+        </div>
+        <div class="story-text reveal reveal-delay-2">
+          <p class="t-label">The Journey</p>
+          <span class="gold-rule gold-rule--left"></span>
+          <h2 style="margin-bottom:1.5rem;">Stitching <em>Dreams</em><br>One Garment at a Time</h2>
+          <p>Sai Boutique was born from a passion for precision and a deep respect for traditional Indian craftsmanship. Located in the heart of Hunasagi, our boutique has served local families for years — becoming the trusted name customers return to season after season.</p>
+          <p>Every garment that leaves our shop carries the care of hands that truly understand fabric — its texture, its fall, its personality. We believe well-stitched clothing isn't just about measurements; it's about how you feel when you wear it.</p>
+          <p>We speak the languages of our community — Kannada, Telugu, and Hindi — because great tailoring starts with clear communication and genuine understanding of your vision.</p>
+
+          <div class="stats-row">
+            <div class="stat-item">
+              <span class="stat-item__number">500+</span>
+              <span class="stat-item__label">Garments Crafted</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-item__number">3</span>
+              <span class="stat-item__label">Languages Spoken</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-item__number">7</span>
+              <span class="stat-item__label">Days Open Weekly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VALUES -->
+      <div class="reveal">
+        <div class="section-head">
+          <p class="t-label">What We Stand For</p>
+          <span class="gold-rule"></span>
+          <h2>Our <em>Values</em></h2>
+        </div>
+        <div class="values-strip">
+          <div class="value-item">
+            <div class="value-item__icon">✦</div>
+            <h4>Quality</h4>
+            <p>Careful, precise stitching. No shortcuts, no compromises on finishing.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-item__icon">📐</div>
+            <h4>Precision</h4>
+            <p>Every measurement matters. We take our time to get your fit exactly right.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-item__icon">🤝</div>
+            <h4>Trust</h4>
+            <p>Fair pricing, honest timelines, and genuine respect for every customer.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LANGUAGES -->
+      <div class="reveal" style="text-align:center;padding:4rem 0 2rem;">
+        <p class="t-label" style="margin-bottom:0.8rem;">Languages We Speak</p>
+        <span class="gold-rule"></span>
+        <h2 style="margin:1rem 0 0.6rem;">We Understand <em style="color:var(--gold);">You</em></h2>
+        <p style="max-width:440px;margin:0 auto 1.8rem;">Communicate your design vision in the language you're most comfortable with. We listen and we understand.</p>
+        <div class="lang-badges" style="justify-content:center;">
+          <span class="lang-badge">🏛 Kannada</span>
+          <span class="lang-badge">🌿 Telugu</span>
+          <span class="lang-badge">🌙 Hindi</span>
+        </div>
+      </div>
+
+      <!-- TIMELINE -->
+      <div style="margin-top:5rem;" class="reveal">
+        <div class="section-head">
+          <p class="t-label">Milestones</p>
+          <span class="gold-rule"></span>
+          <h2>Our <em>Journey</em></h2>
+        </div>
+        <div style="max-width:580px;margin:0 auto;">
+          <div class="timeline">
+            <div class="timeline-item">
+              <p class="timeline-item__year">The Beginning</p>
+              <h4>Sai Boutique Opens Its Doors</h4>
+              <p>Our shop opened in Hunasagi with a single sewing machine, a passion for fabric, and a promise — a perfect fit for every customer, every time.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-item__year">Growing Trust</p>
+              <h4>Expanding Our Services</h4>
+              <p>Word of mouth brought more families to our door. We added bridal wear, kids' clothing, and alteration services to serve the community's evolving needs.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-item__year">Today</p>
+              <h4>A Trusted Neighbourhood Name</h4>
+              <p>Open every day, 9:30 AM to 9:00 PM, serving hundreds of satisfied customers annually — with the same warmth and attention as day one.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="cta-banner reveal" style="max-width:720px;margin-inline:auto;">
+        <p class="t-label">Come Meet Us</p>
+        <h2>Visit <em>Sai Boutique</em></h2>
+        <p>Walk in any day between 9:30 AM and 9:00 PM. We'd love to hear your vision and help you create something beautiful.</p>
+        <div class="cta-banner__actions">
+          <a href="tel:9902958742" class="btn btn--primary btn--lg"><span>📞 &nbsp;9902958742</span></a>
+          <a href="contact.html" class="btn btn--outline"><span>Contact Us</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">Sai Boutique</div>
+      <span class="gold-rule"></span>
+      <nav class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__contact">
+        <span>⏰ &nbsp;9:30 AM – 9:00 PM &nbsp;·&nbsp; Every Day</span>
+        <a href="tel:9902958742">📞 &nbsp;9902958742</a>
+      </div>
+      <p class="footer__copy">© 2024 Sai Boutique, Hunasagi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919902958742" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
